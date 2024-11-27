@@ -1,0 +1,19 @@
+
+const chkArmstrong = (num: number): boolean => {
+    const digits = num.toString().split(''); 
+    const numOfDigits = digits.length; 
+    let sum = 0;
+
+    
+    for (let digit of digits) {
+        sum += Math.pow(parseInt(digit), numOfDigits); 
+    }
+
+    return sum === num;
+};
+
+
+const number = 153;
+const isArmstrong = chkArmstrong(number);
+
+console.log(`${number} is an Armstrong number:`, isArmstrong);

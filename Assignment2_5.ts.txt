@@ -1,0 +1,11 @@
+
+function chkString(input: string): boolean {
+    
+    return input.toLowerCase().includes("marvellous");
+}
+
+
+const testString = "Pune Kothrud Marvellous System";
+const containsMarvellous = chkString(testString);
+
+console.log(`The string contains the word "marvellous":`, containsMarvellous);
